@@ -37,13 +37,13 @@ app.layout = html.Div(
 # 对应app实例的回调函数装饰器
 @app.callback(
     [Output('output-value', 'children'),
-    Output('output2', 'children')],
+     Output('output2', 'children')],
     [Input('input-lastname', 'value'),
-    Input('input-firstname', 'value')]
+     Input('input-firstname', 'value')]
 )
 def input_to_output(lastname, firstname):
     try:
-        return '完整姓名：' + lastname + firstname, f'姓名长度为{len(lastname+firstname)}'
+        return '完整姓名：' + lastname + firstname, f'姓名长度为{len(lastname + firstname)}'
 
     except:
         return '等待输入……', '等待输入……'
