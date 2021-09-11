@@ -36,7 +36,7 @@ app.layout = html.Div(
 
 # 对应app实例的回调函数装饰器
 @app.callback(
-    [Output('output-value', 'children'),
+    [Output('output1', 'children'),
      Output('output2', 'children')],
     [Input('input-lastname', 'value'),
      Input('input-firstname', 'value')]
